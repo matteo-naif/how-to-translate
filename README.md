@@ -1,5 +1,7 @@
 # How to translate
 
+Applicazione per allenarsi a tradurre le parole dall'inglese.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
 ## Development server
