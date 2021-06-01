@@ -2,6 +2,8 @@
 
 Applicazione per allenarsi a tradurre le parole dall'inglese.
 
+Demo: [how-to-translate](https://matteo-naif.github.io/how-to-translate/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
 ## Development server
