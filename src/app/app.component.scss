@@ -16,9 +16,39 @@
     justify-content: center;
     margin: 0 auto;
     padding: 1rem;
+    padding-bottom: 3rem;
     min-height: 100vh;
     z-index: 2;
     position: relative;
+}
+
+.credits{
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+
+  a, span {
+    color: #fff;
+    opacity: 0.2;
+  }
+
+  a {
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  span {
+    margin: 0 0.5rem;
+  }
 }
 
 .bubble {
