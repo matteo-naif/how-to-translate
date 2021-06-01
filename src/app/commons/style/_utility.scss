@@ -1,0 +1,23 @@
+.u- {
+  &font-handwriting {
+      font-family: 'Patrick Hand SC', cursive !important;
+      text-transform: uppercase;
+  }
+
+  &width-100{
+    width: 100% !important;
+  }
+
+  &mb-0-5{
+    margin-bottom: 0.5rem !important;
+  }
+
+  &mr-1{
+    margin-right: 1rem !important;
+  }
+
+  &bg-gray{
+    background: #cccccc !important;
+  }
+
+}

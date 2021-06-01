@@ -1,0 +1,25 @@
+<h2 mat-dialog-title class="u-font-handwriting">
+  Aggiungi traduzione</h2>
+<mat-dialog-content class="mat-typography">
+
+  <form [formGroup]="form">
+    <div class="input-container">
+      <mat-form-field>
+        <mat-label>Italiano</mat-label>
+        <input matInput formControlName="initial">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Inglese</mat-label>
+        <input matInput formControlName="translated">
+      </mat-form-field>
+    </div>
+  </form>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close>Chiudi</button>
+  <button mat-raised-button color="primary" (click)="addTranslation()" [disabled]="!form.valid">
+    Aggiungi traduzione
+  </button>
+</mat-dialog-actions>

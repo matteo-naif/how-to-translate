@@ -1,0 +1,20 @@
+<aside>
+  <mat-card>
+
+    <div class="decoration"></div>
+
+    <p class="u-font-handwriting">Aggiungi altre parole</p>
+
+    <!-- TODO: mostrare le parole on hover o tramite dialog -->
+    <button mat-stroked-button (click)="importTranslationList(translateService.translationListColors)" class="u-width-100 u-mb-0-5">Colori</button>
+    <button mat-stroked-button (click)="importTranslationList(translateService.translationListAnatomy)" class="u-width-100 u-mb-0-5">Anatomia</button>
+    <button mat-stroked-button (click)="importTranslationList(translateService.translationListGreetings)" class="u-width-100 u-mb-0-5">Saluti</button>
+
+    <button
+      mat-button
+      (click)="openDialogAddTranslation()"
+      class="u-width-100 u-bg-gray">
+      Scrivo io
+    </button>
+  </mat-card>
+</aside>

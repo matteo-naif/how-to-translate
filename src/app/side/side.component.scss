@@ -1,0 +1,22 @@
+:host{
+
+  grid-column: span 12;
+  align-items: center;
+  justify-content: stretch;
+  text-align: center;
+
+  @media screen and (min-width: 720px) {
+      grid-column: span 4;
+  }
+
+
+
+}
+.decoration{
+  width: min(200px, 80%);
+  height: 2rem;
+  background: rgba(#C4C4C4, 0.25);
+  margin: 0 auto;
+  transform: translateY(-2rem) rotate(-1deg);
+
+}

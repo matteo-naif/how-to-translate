@@ -1,0 +1,15 @@
+:host {
+  grid-column: span 12;
+
+  @media screen and (min-width: 720px) {
+      grid-column: span 8;
+  }
+
+
+  align-items: center;
+  justify-content: start;
+
+  mat-form-field {
+      display: inline-block;
+  }
+}

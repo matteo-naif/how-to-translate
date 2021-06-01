@@ -1,0 +1,62 @@
+@import './commons/style/variables';
+
+.wrapper {
+    background: $c-primary-light;
+    background: linear-gradient(0deg, $c-primary-dark, $c-primary-light);
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+.bubble {
+  display: block;
+  position: fixed;
+  border-radius: 999px;
+  background: $c-accent;
+  opacity: 0.2;
+  z-index: 1;
+
+  &--01{
+    top: 45px;
+    left: -125px;
+    width: 250px;
+    height: 250px;
+
+  }
+
+  &--02{
+    top: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+
+  }
+
+  &--03{
+    bottom: -50px;
+    right: 200px;
+    width: 250px;
+    height: 250px;
+
+  }
+
+  &--04{
+    bottom: 100px;
+    right: 400px;
+    width: 72px;
+    height: 72px;
+  }
+}

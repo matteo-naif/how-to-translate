@@ -1,0 +1,32 @@
+<main>
+  <app-title></app-title>
+  <form [formGroup]="form">
+
+    <div>
+      <mat-form-field>
+        <mat-label>Italiano</mat-label>
+        <input matInput formControlName="initial" readonly>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Inglese</mat-label>
+        <input matInput formControlName="translated">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button mat-raised-button type="button" color="accent" (click)="checkAnswer()" class="u-mr-1">
+        Rispondi
+      </button>
+
+      <button mat-flat-button type="button" (click)="openDialogDictionary()">
+        Sbircia il dizionario
+      </button>
+    </div>
+
+
+
+  </form>
+</main>
