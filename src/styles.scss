@@ -40,3 +40,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   position: static;
   width: 900px;
 }
+
+.dialog-success{
+  background-color: hsl(120, 90%, 25%);
+}
+
+.dialog-error{
+  background-color: hsl(0, 90%, 45%);
+}

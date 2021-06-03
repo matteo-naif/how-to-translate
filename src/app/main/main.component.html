@@ -1,17 +1,14 @@
 <main>
   <app-title></app-title>
+
+  <p class="u-font-handwriting u-mb-0-5 word-to-translate"> {{currentTranslation?.it || '' | titlecase}}</p>
+
+  <p class="u-font-handwriting u-mb-0-5">in inglese si scrive</p>
+
   <form [formGroup]="form">
-
     <div>
-      <mat-form-field>
-        <mat-label>Italiano</mat-label>
-        <input matInput formControlName="initial" readonly>
-      </mat-form-field>
-    </div>
-
-    <div>
-      <mat-form-field>
-        <mat-label>Inglese</mat-label>
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Traduzione in inglese</mat-label>
         <input matInput formControlName="translated">
       </mat-form-field>
     </div>
