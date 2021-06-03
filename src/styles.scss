@@ -36,7 +36,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .dialog-medium {
-  max-width: 90%;
+  max-width: 95% !important;
   position: static;
   width: 900px;
 }
