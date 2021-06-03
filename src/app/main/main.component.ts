@@ -43,7 +43,6 @@ export class MainComponent implements OnInit, OnDestroy {
 
   createForm() {
     this.form = this.fb.group({
-      initial: [''],
       translated: ['']
     });
   }
@@ -53,7 +52,6 @@ export class MainComponent implements OnInit, OnDestroy {
     this.currentTranslation = this.getRandomTranslation(this.dictionary.values);
 
     if(this.currentTranslation){
-      this.form.get('initial').setValue(this.currentTranslation.it, { emitValue: false })
       this.form.get('translated').setValue(null, { emitValue: false })
     }
   }
@@ -73,12 +71,12 @@ export class MainComponent implements OnInit, OnDestroy {
     }
 
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-      this.utilService.openSnackBar('Risposta corretta!');
+      this.utilService.openSnackBar('Risposta corretta!', undefined, undefined, 'dialog-success');
       this.populateForm();
       return;
     }
 
-    this.utilService.openSnackBar('Hai sbagliato, riprova...');
+    this.utilService.openSnackBar('Hai sbagliato, riprova...', undefined, undefined, 'dialog-error');
   }
 
   openDialogDictionary() {

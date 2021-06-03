@@ -91,7 +91,7 @@ export class TranslateService {
     },
     {
       it: 'arrivederci',
-      en: 'bye'
+      en: 'goodbye'
     },
     {
       it: 'buongiorno',
