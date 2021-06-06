@@ -70,9 +70,16 @@ export class MainComponent implements OnInit, OnDestroy {
       return;
     }
 
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    const rating = this.utilService.jaroWinkler(userAnswer, correctAnswer);
+
+    if (rating > 0.95) {
       this.utilService.openSnackBar('Risposta corretta!', undefined, undefined, 'dialog-success');
       this.populateForm();
+      return;
+    }
+
+    if(rating > 0.8){
+      this.utilService.openSnackBar('Risposta quasi esatta...');
       return;
     }
 
